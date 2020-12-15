@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'neuropolxfree';
+	src: url('../fonts/neuropolxfree.eot');
+	src: local('☺'), url('../fonts/neuropolxfree.woff') format('woff'), url('../fonts/neuropolxfree.ttf') format('truetype'), url('../fonts/neuropolxfree.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'AndroidInsomnia';
+    src: url('../fonts/AndroidInsomniaRegular.eot');
+    src: local('☺'), url('../fonts/AndroidInsomniaRegular.woff') format('woff'), url('../fonts/AndroidInsomniaRegular.ttf') format('truetype'), url('../fonts/AndroidInsomniaRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------background-----------------*/
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*----------------background-----------------*/
+.form-container {
+    position: absolute;
+    top: 50px;
+    right: 750px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid #436fea;
+    width: 600px;
+    height: 500px;
+    font-family: 'neuropolxfree';
+    color: white;
+    font-size: 15px;
+}
+pre {
+    font-family: 'AndroidInsomnia';
+    color: white;
+    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
+    background-color: #012F80;
+}
+label {
+    width: 200px;
+    margin-right: 33px;
+}
+select {
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-family: 'AndroidInsomnia';
+    background-color: #022365;
+    color:white;
+}
+.mqtt {
+    position: absolute;
+    top: 40px;
+    left: 95px;
+    right: 0;
+    bottom: 0;
+}
+button {
+    color: white;
+    background-color: #4054BF;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'AndroidInsomnia';
+
+}
