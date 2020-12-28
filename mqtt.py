@@ -4,7 +4,7 @@ from paho.mqtt import client as mqtt_client
 
 broker = 'broker.emqx.io'
 port = 1883
-topic = "esp32/dht/humidity"
+topic = "esp32/dht/temperature"
 # generate client ID with pub prefix randomly
 client_id = f'python-mqtt-{random.randint(0, 100)}'
 
@@ -27,7 +27,7 @@ def subscribe(client: mqtt_client):
         print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
 
         handle = open("output.txt", "a")
-        handle.write(f"`{msg.payload.decode()}`")
+        handle.write(f"{msg.payload.decode()}\n")
         handle.close()
 
     client.subscribe(topic)
