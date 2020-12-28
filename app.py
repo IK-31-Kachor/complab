@@ -39,7 +39,7 @@ def login_page():
 
             next_page = request.args.get('next')
 
-            return redirect(next_page)
+            return render_template("server.html")
         else:
             flash('Login or password is not correct','error')
 
