@@ -42,13 +42,13 @@
           const poemDisplay = document.querySelector('pre');
 
           verseChoose.onchange = function() {
-            const verse = verseChoose.value;
-            updateDisplay(verse);
+            const output = verseChoose.value;
+            updateDisplay(output);
           };
 
-          function updateDisplay(verse) {
-            verse = verse.replace(" ", "");
-            verse = verse.toLowerCase();
+          function updateDisplay(output) {
+            output = output.replace(" ", "");
+            output = output.toLowerCase();
             let url = output + '.txt';
 
             let request = new XMLHttpRequest();
@@ -62,8 +62,8 @@
             request.send();
           };
 
-          updateDisplay('Verse 1');
-          verseChoose.value = 'Verse 1';
+          updateDisplay('output ');
+          outputChoose.value = 'output ';
 
         </script>
         <div class="input-form-container">
