@@ -35,20 +35,17 @@
 
             </pre>
         </div>
-
-       <script>
+	    <script>
 
           const verseChoose = document.querySelector('select');
           const poemDisplay = document.querySelector('pre');
 
           verseChoose.onchange = function() {
-            const output = verseChoose.value;
-            updateDisplay(output);
+            const verse = verseChoose.value;
+            updateDisplay(verse);
           };
 
-          function updateDisplay(output) {
-            output = output.replace(" ", "");
-            output = output.toLowerCase();
+          function updateDisplay(verse) {
             let url = output + '.txt';
 
             let request = new XMLHttpRequest();
@@ -62,8 +59,8 @@
             request.send();
           };
 
-          updateDisplay('output ');
-          outputChoose.value = 'output ';
+          updateDisplay('Verse 1');
+          verseChoose.value = 'Verse 1';
 
         </script>
         <div class="input-form-container">
