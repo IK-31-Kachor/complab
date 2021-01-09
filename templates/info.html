@@ -49,7 +49,7 @@
           function updateDisplay(verse) {
             verse = verse.replace(" ", "");
             verse = verse.toLowerCase();
-            let url = output + '.txt';
+            let url = verse + '.txt';
 
             let request = new XMLHttpRequest();
             request.open('GET', url);
